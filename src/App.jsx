@@ -9,9 +9,9 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route Component={DefaultLayout}>
-          <Route />
-          <Route />
-          <Route />
+          <Route path="/" Component={Homepage} />
+          <Route path="/chi-siamo" Component={AboutUsPage} />
+          <Route path="/prodotti" Component={ProductsPage} />
         </Route>
       </Routes>
     </BrowserRouter>

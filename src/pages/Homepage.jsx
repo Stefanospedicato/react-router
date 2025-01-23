@@ -1,5 +1,13 @@
 const Homepage = () => {
-  return <h1>BENVUTO NEL MIO BLOG</h1>;
+  return (
+    <>
+      <section className="welcome">
+        <div className="container text-center">
+          <h1>BENVENUTO!!</h1>
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default Homepage;

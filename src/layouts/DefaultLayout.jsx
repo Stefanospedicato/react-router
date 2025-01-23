@@ -10,7 +10,7 @@ const DefaultLayout = () => {
         </div>
       </header>
       <main>
-        <div className="container">
+        <div className="container my-5">
           <Outlet />
         </div>
       </main>

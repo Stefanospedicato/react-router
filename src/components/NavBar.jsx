@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import navbarMenu from "../../data/navbarMenu";
 
 const NavBar = () => {
-  const { id, name, url } = navbarMenu;
   return (
     <nav>
       <ul className="nav">

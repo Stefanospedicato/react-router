@@ -1,7 +1,7 @@
 const AboutUsPage = () => {
   return (
     <div>
-      <h1>CONTATTI</h1>
+      <h1 className="text-center">CONTATTI</h1>
       <p>Contatto 1</p>
       <p>Contatto 2</p>
       <p>Contatto 3</p>

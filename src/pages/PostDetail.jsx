@@ -41,6 +41,7 @@ const PostDetail = () => {
         <div className="card-body">
           <h5 className="card-title">{post?.title}</h5>
           <p className="card-text">{post?.content}</p>
+          <p className="card-text">TAGS: {post?.tags.join(", ")}</p>
           <div className="d-flex justify-content-between">
             <button
               onClick={() => navigate("/prodotti")}

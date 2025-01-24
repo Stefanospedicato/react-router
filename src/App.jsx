@@ -4,6 +4,8 @@ import Homepage from "./pages/Homepage";
 import AboutUsPage from "./pages/AboutUsPage";
 import ProductsPage from "./pages/ProductsPage";
 import AddPost from "./pages/AddPost";
+import ErrorPage from "./pages/ErrorPage";
+import PostDetail from "./pages/PostDetail";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
           <Route path="/chi-siamo" Component={AboutUsPage} />
           <Route path="/prodotti" Component={ProductsPage} />
           <Route path="/crea-post" Component={AddPost} />
+          <Route path="/dettaglio/:id" Component={PostDetail} />
+          <Route path="*" Component={ErrorPage} />
         </Route>
       </Routes>
     </BrowserRouter>

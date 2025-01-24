@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const ProductsPage = () => {
-  const [posts, setPosts] = useState(null); // Correzione di "useStete" in "useState"
+  const [posts, setPosts] = useState(null);
   const baseApiUrl = "http://localhost:3000";
 
   const fetchData = () => {
@@ -26,8 +27,14 @@ const ProductsPage = () => {
       <ul className="list-group">
         {posts &&
           posts.map((post) => (
-            <li key={post.id} className="list-group-item">
-              {post.title}
+            <li
+              key={post.id}
+              className="list-group-item d-flex justify-content-between"
+            >
+              <span>{post.title}</span>
+              <Link className="btn btn-primary" to={`/dettaglio/${post.id}`}>
+                Dettaglio Prodotto
+              </Link>
             </li>
           ))}
       </ul>

@@ -30,3 +30,8 @@ header {
 .welcome{
   height: calc(100vh - 70px);
 }
+
+.error{
+  color: red;
+  font-size: 8rem;
+}
